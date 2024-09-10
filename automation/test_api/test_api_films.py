@@ -5,7 +5,6 @@ import os
 #Related third party imports.
 import allure
 import pytest
-import difflib
 
 #Local application/library specific imports.  
 from api_objects.films_api import *

@@ -5,10 +5,12 @@ def sort_odd_even(number_str):
 
     evens = [num for num in number_array if num % 2 == 0]
 
-    # 降冪排序
+    print("input=" + number_str)
+
+    # 奇數排序
     odds = sorted(odds, reverse=True)  
     print("odds=" + str(odds))
-    # 升冪排序
+    # 偶數排序
     evens = sorted(evens)               
     print("evens=" + str(evens))
 
