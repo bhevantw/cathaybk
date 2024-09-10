@@ -56,7 +56,7 @@ def test_films_id_get_film_success(get_session, data_row):
     assert compare_rsp_with_data(rsp["title"], data_row['title'])
     assert compare_rsp_with_data(str(rsp["episode_id"]), data_row['episode_id'])
     opening_crawl_str = data_row['opening_crawl'].replace('\n','\r\n').strip()
-    assert compare_rsp_with_data(rsp['opening_crawl'], opening_crawl_str)
+    assert compare_rsp_with_data(rsp['opening_crawl'], data_row['opening_crawl'])
     assert compare_rsp_with_data(rsp["director"], data_row['director'])
     assert compare_rsp_with_data(rsp["producer"], data_row['producer'])
     assert compare_rsp_with_data(rsp["release_date"], data_row['release_date'])
